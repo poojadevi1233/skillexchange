@@ -25,10 +25,10 @@ $notify_count = $nrow['total'];
 <title>Dashboard</title>
 
 <style>
-body{
-margin:0;
-font-family:Arial, sans-serif;
-background:#f4f6f9;
+ body.other{
+background:url('images/bg2.jpg') no-repeat center center fixed !important;
+background-size:cover !important;
+min-height:100vh;
 }
 
 .navbar{
@@ -102,7 +102,7 @@ border-radius:8px;
 </style>
 
 </head>
-<body>
+<body class="other">
 
 <div class="navbar">
 <div><b>Skill Exchange Platform</b></div>

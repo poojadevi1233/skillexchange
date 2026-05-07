@@ -33,14 +33,12 @@ if(isset($_POST['login']))
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login</title>
 <style>
-body{font-family:Arial;background:#f4f6f9;}
-.box{
-width:400px;
-margin:100px auto;
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 0 10px #ccc;
+body{
+background:url('images/bg2.jpg') no-repeat center center fixed;
+background-size:cover;
+min-height:100vh;
+font-family:Arial;
+margin:0;
 }
 input,button{
 width:100%;

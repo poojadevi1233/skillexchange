@@ -12,10 +12,11 @@ padding:0;
 box-sizing:border-box;
 }
 
-body{
+body.home{
 font-family:Arial, sans-serif;
-background:url('images/bg.jpg') no-repeat center center/cover;
 min-height:100vh;
+background:url('images/bg.jpg') no-repeat center center fixed !important;
+background-size:cover !important;
 }
 
 .overlay{
@@ -124,7 +125,7 @@ margin:10px auto;
 </style>
 </head>
 
-<body>
+<body class="home">
 
 <div class="overlay">
 

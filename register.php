@@ -33,9 +33,12 @@ window.location='login.php';
     <title>Register</title>
     <style>
         body{
-            font-family:Arial;
-            background:#f4f6f9;
-        }
+background:url('images/bg2.jpg') no-repeat center center fixed;
+background-size:cover;
+min-height:100vh;
+font-family:Arial;
+margin:0;
+}
 
         .box{
             width:400px;

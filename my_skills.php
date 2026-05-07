@@ -28,9 +28,11 @@ if(isset($_GET['delete']))
 
 <style>
 body{
-margin:0;
+background:url('images/bg2.jpg') no-repeat center center fixed;
+background-size:cover;
+min-height:100vh;
 font-family:Arial;
-background:#f4f6f9;
+margin:0;
 }
 
 .navbar{

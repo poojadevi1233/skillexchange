@@ -1,9 +1,43 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* =========================
+   BODY BACKGROUND SYSTEM
+========================= */
 body{
 font-family:Arial, sans-serif;
 margin:0;
-background:#f4f6f9;
+min-height:100vh;
+background-size:cover !important;
+background-position:center !important;
+background-repeat:no-repeat !important;
+background-attachment:fixed !important;
 }
 
+/* Home Page Background */
+body.home{
+background-image:url('images/bg.jpg') !important;
+}
+
+body.other{
+background-image:url('images/bg2.jpg') !important;
+}
+
+/* Overlay */
+.overlay{
+background:rgba(0,0,0,0.55);
+min-height:100vh;
+}
+
+/* =========================
+   NAVBAR
+========================= */
 .navbar{
 background:#007bff;
 color:white;
@@ -21,45 +55,95 @@ margin-left:15px;
 font-weight:bold;
 }
 
+.navbar a:hover{
+text-decoration:underline;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
 .container{
 width:90%;
 max-width:1100px;
 margin:30px auto;
 }
 
-.box{
-background:white;
-padding:20px;
+/* =========================
+   BOX / CARD
+========================= */
+.box,
+.card,
+table{
+background:rgba(255,255,255,0.94);
 border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.10);
 }
 
-input,select,textarea,button{
+.box,
+.card{
+padding:20px;
+margin-bottom:20px;
+}
+
+/* =========================
+   FORMS
+========================= */
+input,
+select,
+textarea,
+button{
 width:100%;
 padding:12px;
 margin-top:10px;
-box-sizing:border-box;
 border:1px solid #ccc;
 border-radius:6px;
+font-size:15px;
+}
+
+textarea{
+min-height:90px;
+resize:vertical;
 }
 
 button{
 background:#007bff;
 color:white;
 border:none;
-cursor:pointer;
 font-weight:bold;
+cursor:pointer;
 }
 
 button:hover{
 background:#0056b3;
 }
 
+/* =========================
+   BUTTON LINKS
+========================= */
+a.btn,
+a.action{
+display:inline-block;
+padding:9px 14px;
+margin:4px;
+background:#007bff;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-size:14px;
+}
+
+a.btn:hover,
+a.action:hover{
+background:#0056b3;
+}
+
+/* =========================
+   TABLE
+========================= */
 table{
 width:100%;
-margin-top:20px;
 border-collapse:collapse;
-background:white;
+margin-top:20px;
 }
 
 th{
@@ -67,25 +151,41 @@ background:#007bff;
 color:white;
 }
 
-table,th,td{
+table,
+th,
+td{
 border:1px solid #ddd;
 }
 
-th,td{
+th,
+td{
 padding:10px;
 text-align:center;
 }
 
-a.btn{
-background:#007bff;
-color:white;
-padding:8px 12px;
-text-decoration:none;
-border-radius:6px;
-display:inline-block;
-margin:3px;
+/* =========================
+   GRID
+========================= */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
 }
 
+/* =========================
+   PROFILE IMAGE
+========================= */
+img.profile{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid #007bff;
+}
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
 @media(max-width:768px){
 
 .navbar{
@@ -109,7 +209,12 @@ white-space:nowrap;
 font-size:14px;
 }
 
-.box{
+.box,
+.card{
 padding:15px;
+}
+
+.grid{
+grid-template-columns:1fr;
 }
 }
